@@ -1,13 +1,21 @@
+/* Aqui estamos dizendo como o corpo da página deve parecer */
 body {
+  /* Não queremos nenhum espaço nas bordas da página */
   margin: 0;
+
+  /* Escolhemos as letras (fontes) que serão usadas no texto da página */
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+  /* Fazemos as letras ficarem mais suaves e bonitas em telas de computador */
+  -webkit-font-smoothing: antialiased; /* Para navegadores como o Chrome */
+  -moz-osx-font-smoothing: grayscale; /* Para navegadores no Mac */
 }
 
+/* Aqui estamos dizendo como o texto que parece código deve parecer */
 code {
+  /* Escolhemos fontes especiais que parecem com as usadas para escrever código */
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
