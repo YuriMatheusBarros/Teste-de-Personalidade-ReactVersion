@@ -34,6 +34,7 @@ function TraçosResumido() {
 
       {/* Botão para refazer o teste */}
       <button onClick={refazerTeste}>Refazer Teste</button>
+      <button onClick={() => navigate('/resultado')}>Voltar para o resultado</button>
     </div>
   );
 }
