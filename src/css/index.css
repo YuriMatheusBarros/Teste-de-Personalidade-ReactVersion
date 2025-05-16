@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+
+  /* Fazemos as letras ficarem mais suaves e bonitas em telas de computador */
+  -webkit-font-smoothing: antialiased; /* Para navegadores como o Chrome */
+  -moz-osx-font-smoothing: grayscale; /* Para navegadores no Mac */
+}
