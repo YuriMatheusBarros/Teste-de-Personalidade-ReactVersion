@@ -3,7 +3,7 @@ import React from 'react';
 // Importamos o ReactDOM, que coloca o site na tela do navegador
 import ReactDOM from 'react-dom/client';
 // Importamos o arquivo de estilos (as "roupas" do site)
-import './index.css';
+import './css/index.css';
 // Importamos o App, que é o coração do nosso site
 import App from './App';
 
