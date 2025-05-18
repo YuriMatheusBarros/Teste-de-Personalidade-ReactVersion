@@ -26,7 +26,7 @@ function Intro() {
 
       
       <p className='explicacao'>O objetivo é avaliar como você se comporta e se sente em diferentes situações.</p>
-      <p className='explicacao'>Composto por 33 perguntas, <em>este é apenas um teste de demonstração, baseado no modelo dos Cinco Fatores. Não substitui uma avaliação psicológica profissional.</em> — responda conforme sua própria percepção.</p>
+      <p className='explicacao'>Composto por 30 perguntas, <em>este é apenas um teste de demonstração, baseado no modelo dos Cinco Fatores. Não substitui uma avaliação psicológica profissional.</em> — responda conforme sua própria percepção.</p>
       <p className='explicacao'>As opções de resposta variam entre: Discordo Completamente, Discordo parcialmente, Neutro, Concordo parcialmente, Concordo Completamente.</p>
       <p className='explicacao'>Não há respostas certas ou erradas — apenas a sua própria visão sobre si mesmo(a).</p>
       <p className='explicacao'>Após responder todas as perguntas, você receberá um resultado detalhado sobre os seus traços de personalidade com maior destaque.<span className='text-boaSorte'>Bom teste!</span></p>

@@ -27,7 +27,6 @@ const perguntas = [
   { texto: "Evito ser o centro das atenções", peso: 2, tipo: "extroversao", inverso: true }, // timidez, inverso do traço
   { texto: "Tenho facilidade em iniciar conversas com pessoas novas", peso: 2, tipo: "extroversao" }, // sociabilidade
   { texto: "Amo festas grandes", peso: 3, tipo: "extroversao" }, // preferência por estímulo social intenso
-  { texto: "Em grupos, normalmente prefiro observar antes de participar", peso: 1, tipo: "extroversao", inverso: true }, // retraimento social leve
   { texto: "Demonstro com clareza como estou me sentindo", peso: 2, tipo: "extroversao" }, // expressividade emocional
   { texto: "Gosto de experimentar coisas novas com frequência", peso: 1, tipo: "extroversao" }, // busca de novidade
   { texto: "Sinto-me à vontade em ambientes com muitas pessoas", peso: 3, tipo: "extroversao" }, // adaptabilidade social
@@ -36,7 +35,6 @@ const perguntas = [
   //  Agradabilidade
   { texto: "Tenho dificuldade em deixar para trás mágoas do passado", peso: 3, tipo: "agradabilidade", inverso: true }, // ressentimento elevado
   { texto: "Gosto de ajudar nas tarefas de casa", peso: 1, tipo: "agradabilidade" }, // cooperação básica
-  { texto: "Geralmente acredito nas boas intenções das pessoas", peso: 2, tipo: "agradabilidade" }, // confiança interpessoal
   { texto: "Mantenho minhas promessas", peso: 3, tipo: "agradabilidade" }, // confiabilidade elevada
   { texto: "Normalmente sou receptivo com desconhecidos.", peso: 2, tipo: "agradabilidade" }, // afabilidade social
   { texto: "Costumo ceder para evitar conflitos", peso: 2, tipo: "agradabilidade" }, // tendência conciliadora
@@ -47,7 +45,6 @@ const perguntas = [
   { texto: "Geralmente encontro significado em músicas, pinturas ou outras expressões artísticas.", peso: 2, tipo: "abertura" }, // valorização estética
   { texto: "Frequentemente encontro maneiras diferentes de resolver problemas ou expressar ideias.", peso: 3, tipo: "abertura" }, // criatividade pessoal
   { texto: "Prefiro ideias práticas a conceitos abstratos", peso: 2, tipo: "abertura", inverso: true }, // pragmatismo reduzido
-  { texto: "Fico facilmente envolvido por histórias de mundos imaginários ou situações irreais.", peso: 1, tipo: "abertura" }, // gosto por fantasia
   { texto: "Às vezes sou tocado por detalhes ou cenas que a maioria das pessoas nem nota.", peso: 3, tipo: "abertura" }, // sensibilidade estética elevada
   { texto: "Evito temas filosóficos ou existenciais", peso: 2, tipo: "abertura", inverso: true } // restrição à reflexão abstrata
 ];
