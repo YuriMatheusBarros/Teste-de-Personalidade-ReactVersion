@@ -29,10 +29,10 @@ function Intro() {
       <p className='explicacao'>Composto por 33 perguntas, <em>este teste é apenas uma amostra de um teste real</em> — responda conforme sua própria percepção.</p>
       <p className='explicacao'>As opções de resposta variam entre: Discordo Completamente, Discordo parcialmente, Neutro, Concordo parcialmente, Concordo Completamente.</p>
       <p className='explicacao'>Após responder todas as perguntas, você receberá um resultado detalhado sobre os seus traços de personalidade com maior destaque. <span className='text-boaSorte'>Bom teste!</span></p>
-      <p className='explicacao destaque-suave'>É recomendável evitar a opção neutro para maior exatidão do resultado.</p>
+      <p className='explicacao destaque-suave'> <i class="bi bi-info-circle"></i> É recomendável evitar a opção neutro para maior exatidão do resultado.</p>
 
       {/* Botão que inicia o teste e chama a função iniciarTeste */}
-      <button className='button-iniciarTeste' onClick={iniciarTeste}>Iniciar Teste</button>
+      <button className='button-iniciarTeste' onClick={iniciarTeste}>INICIAR TESTE</button>
     </div>
   );
 }

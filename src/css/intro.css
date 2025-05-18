@@ -12,12 +12,6 @@ body{
     
 }
 
-.intro h1{
-    text-align: center;
-    margin-bottom: 1.5em;
-    color: #7B2CBF;
-}
-
 .button-iniciarTeste{
     justify-content: center;
     margin-top: 4em;
@@ -28,30 +22,38 @@ body{
     background-color: #7B2CBF;
     color: white;
     cursor: pointer;
+    font-weight: 750;
+    padding: 3px;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .button-iniciarTeste:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  background-color: #6931ad; /* tom um pouco mais escuro do roxo */
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  background-color: #6931ad;
 }
 
 .boasVindas{
     display: flex;
     justify-content: center;
     color:#7B2CBF;
-    margin: 1em 0em 1em 0em;
+    margin: 1em 0em 1.5em 0em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .explicacao{
     display: flex;
     justify-content: center;
     color: #333333;
+    font-weight: 400;
 }
 
 .explicacao em{
     margin: 0 0.3em 0 0.3em;
-    text-decoration: underline;
+    font-weight: 500;
+}
+
+.explicacao i{
+  margin-right: 0.4em;
 }
 
 .explicacao-tracos{
