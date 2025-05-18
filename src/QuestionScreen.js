@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react'; // UseEffect serve para exec
 // Esse "useNavigate" é como um mapa que nos ajuda a ir para outra página.
 import { useNavigate } from 'react-router-dom';
 
+import './css/QuestionScreen.css'
+
 // Cada pergunta tem um texto, um peso (o quanto ela vale) e qual tipo de personalidade ela mede.
 const perguntas = [
   //  Neuroticismo
@@ -140,13 +142,17 @@ function QuestionScreen() {
   // Aqui mostramos a pergunta atual e os botões de resposta
   return (
     <div className="question-screen">
-      <h1>Pergunta {currentQuestion + 1}</h1>
-      <p>{perguntasEmbaralhadas[currentQuestion].texto}</p>
-      <button onClick={() => handleAnswer(0)}>Discordo Completamente</button>
-      <button onClick={() => handleAnswer(2.5)}>Discordo parcialmente</button>
-      <button onClick={() => handleAnswer(5)}>Neutro</button>
-      <button onClick={() => handleAnswer(7.5)}>Concordo parcialmente</button>
-      <button onClick={() => handleAnswer(10)}>Concordo Completamente</button>
+      <h1 className='pergunta-numero'>Pergunta {currentQuestion + 1}</h1>
+      <div className='caixa-pergunta'>
+        <p className='perguntas'>{perguntasEmbaralhadas[currentQuestion].texto}</p>
+      </div>
+      <div className='buttons-opcoes'>
+        <button className='button-opcao' onClick={() => handleAnswer(0)}>DISCORDO COMPLETAMENTE</button>
+        <button className='button-opcao' onClick={() => handleAnswer(2.5)}>DISCORDO PARCIALMENTE</button>
+        <button className='button-opcao' onClick={() => handleAnswer(5)}>NEUTRO</button>
+        <button className='button-opcao' onClick={() => handleAnswer(7.5)}>CONCORDO PARCIALMENTE</button>
+        <button className='button-opcao' onClick={() => handleAnswer(10)}>CONCORDO COMPLETAMENTE</button>
+      </div>
     </div>
   );
 }
