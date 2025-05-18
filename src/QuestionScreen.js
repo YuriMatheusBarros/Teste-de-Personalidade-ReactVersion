@@ -7,16 +7,16 @@ import './css/QuestionScreen.css'
 // Cada pergunta tem um texto, um peso (o quanto ela vale) e qual tipo de personalidade ela mede.
 const perguntas = [
   //  Neuroticismo
-  { texto: "Me preocupo com as coisas", peso: 2, tipo: "neuroticismo" }, // ansiedade moderada
-  { texto: "Me irrito facilmente", peso: 2, tipo: "neuroticismo" }, // reatividade emocional
-  { texto: "Sinto insegurança frequentemente", peso: 2, tipo: "neuroticismo", inverso: true }, // baixa segurança interna
+  { texto: "É comum que pequenos problemas fiquem na minha cabeça por bastante tempo.", peso: 2, tipo: "neuroticismo" }, // ansiedade moderada
+  { texto: "Certas situações do dia a dia conseguem me deixar impaciente com facilidade.", peso: 2, tipo: "neuroticismo" }, // reatividade emocional
+  { texto: "Geralmente me sinto confortável ao lidar com situações novas ou desafiadoras.", peso: 2, tipo: "neuroticismo", inverso: true }, // baixa segurança interna
   { texto: "Sou resistente ao estresse", peso: 1, tipo: "neuroticismo", inverso: true }, // característica positiva oposta
   { texto: "Costumo me sentir desanimado(a)", peso: 3, tipo: "neuroticismo" }, // depressividade intensa
   { texto: "Tenho mudanças de humor repentinas", peso: 3, tipo: "neuroticismo" }, // instabilidade emocional alta
   
 
   //  Conscienciosidade
-  { texto: "Completo as tarefas que me são passadas", peso: 2, tipo: "conscienciosidade" }, // responsabilidade geral
+  { texto: "Completo as tarefas que me são passadas dentro do prazo", peso: 2, tipo: "conscienciosidade" }, // responsabilidade geral
   { texto: "Gosto de organizar as coisas", peso: 2, tipo: "conscienciosidade" }, // ordem e estrutura
   { texto: "Tenho claro meus objetivos", peso: 1, tipo: "conscienciosidade" }, // clareza de metas, peso leve
   { texto: "Trabalho duro", peso: 3, tipo: "conscienciosidade" }, // esforço intenso e dedicação
@@ -25,30 +25,30 @@ const perguntas = [
 
   //  Extroversão
   { texto: "Evito ser o centro das atenções", peso: 2, tipo: "extroversao", inverso: true }, // timidez, inverso do traço
-  { texto: "Faço amigos com facilidade", peso: 2, tipo: "extroversao" }, // sociabilidade
+  { texto: "Tenho facilidade em iniciar conversas com pessoas novas", peso: 2, tipo: "extroversao" }, // sociabilidade
   { texto: "Amo festas grandes", peso: 3, tipo: "extroversao" }, // preferência por estímulo social intenso
-  { texto: "Prefiro observar do que participar em grupo", peso: 1, tipo: "extroversao", inverso: true }, // retraimento social leve
-  { texto: "Expresso minhas emoções intensamente", peso: 2, tipo: "extroversao" }, // expressividade emocional
-  { texto: "Prefiro variedade à rotina", peso: 1, tipo: "extroversao" }, // busca de novidade
-  { texto: "Me sinto confortável no meio das pessoas", peso: 3, tipo: "extroversao" }, // adaptabilidade social
+  { texto: "Em grupos, normalmente prefiro observar antes de participar", peso: 1, tipo: "extroversao", inverso: true }, // retraimento social leve
+  { texto: "Demonstro com clareza como estou me sentindo", peso: 2, tipo: "extroversao" }, // expressividade emocional
+  { texto: "Gosto de experimentar coisas novas com frequência", peso: 1, tipo: "extroversao" }, // busca de novidade
+  { texto: "Sinto-me à vontade em ambientes com muitas pessoas", peso: 3, tipo: "extroversao" }, // adaptabilidade social
 
 
   //  Agradabilidade
-  { texto: "Acho difícil perdoar os outros", peso: 3, tipo: "agradabilidade", inverso: true }, // ressentimento elevado
+  { texto: "Tenho dificuldade em deixar para trás mágoas do passado", peso: 3, tipo: "agradabilidade", inverso: true }, // ressentimento elevado
   { texto: "Gosto de ajudar nas tarefas de casa", peso: 1, tipo: "agradabilidade" }, // cooperação básica
-  { texto: "Confio nos outros", peso: 2, tipo: "agradabilidade" }, // confiança interpessoal
+  { texto: "Geralmente acredito nas boas intenções das pessoas", peso: 2, tipo: "agradabilidade" }, // confiança interpessoal
   { texto: "Mantenho minhas promessas", peso: 3, tipo: "agradabilidade" }, // confiabilidade elevada
-  { texto: "Sou gentil com quem acabei de conhecer", peso: 2, tipo: "agradabilidade" }, // afabilidade social
+  { texto: "Normalmente sou receptivo com desconhecidos.", peso: 2, tipo: "agradabilidade" }, // afabilidade social
   { texto: "Costumo ceder para evitar conflitos", peso: 2, tipo: "agradabilidade" }, // tendência conciliadora
   { texto: "Tendo a desconfiar das pessoas", peso: 2, tipo: "agradabilidade", inverso: true }, // baixa confiança
 
   //  Abertura
-  { texto: "Tenho imaginação vívida", peso: 2, tipo: "abertura" }, // imaginação criativa
-  { texto: "Acredito na importância da arte", peso: 2, tipo: "abertura" }, // valorização estética
-  { texto: "Me considero criativo", peso: 3, tipo: "abertura" }, // criatividade pessoal
+  { texto: "Costumo imaginar cenários detalhados quando penso em algo.", peso: 2, tipo: "abertura" }, // imaginação criativa
+  { texto: "Geralmente encontro significado em músicas, pinturas ou outras expressões artísticas.", peso: 2, tipo: "abertura" }, // valorização estética
+  { texto: "Frequentemente encontro maneiras diferentes de resolver problemas ou expressar ideias.", peso: 3, tipo: "abertura" }, // criatividade pessoal
   { texto: "Prefiro ideias práticas a conceitos abstratos", peso: 2, tipo: "abertura", inverso: true }, // pragmatismo reduzido
-  { texto: "Adoro histórias fantásticas", peso: 1, tipo: "abertura" }, // gosto por fantasia
-  { texto: "Vejo beleza em coisas que os outros não veem", peso: 3, tipo: "abertura" }, // sensibilidade estética elevada
+  { texto: "Fico facilmente envolvido por histórias de mundos imaginários ou situações irreais.", peso: 1, tipo: "abertura" }, // gosto por fantasia
+  { texto: "Às vezes sou tocado por detalhes ou cenas que a maioria das pessoas nem nota.", peso: 3, tipo: "abertura" }, // sensibilidade estética elevada
   { texto: "Evito temas filosóficos ou existenciais", peso: 2, tipo: "abertura", inverso: true } // restrição à reflexão abstrata
 ];
 
