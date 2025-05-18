@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import './css/TraçosResumido.css';
 
 function TraçosResumido() {
   const navigate = useNavigate();
@@ -13,6 +14,17 @@ function TraçosResumido() {
     abertura: "Reflete a criatividade, curiosidade intelectual, interesse por arte, novas ideias e experiências. Altas pontuações indicam pessoas imaginativas e abertas ao novo; pontuações mais baixas sugerem uma preferência por rotina e familiaridade. Esse traço é frequentemente associado à apreciação estética e à busca por experiências enriquecedoras. A abertura pode influenciar a forma como uma pessoa lida com mudanças e incertezas, sendo um fator importante na adaptação a novas situações.",
   };
 
+  const [tracoAberto, setTracoAberto] = useState(null);
+
+  function toggleTraco(nome) {
+    if (tracoAberto === nome) {
+      setTracoAberto(null); // fecha se já estiver aberto
+    } else {
+      setTracoAberto(nome); // abre se estiver fechado
+    }
+  }
+
+
   // Esta função apaga os resultados e leva a pessoa de volta para o início
   const refazerTeste = () => {
     sessionStorage.clear(); // Limpamos os dados guardados do teste
@@ -20,21 +32,44 @@ function TraçosResumido() {
   };
 
   return (
-    <div className="result-screen">
+    <div className="result-screen resultLeft">
       {/* Título da página */}
       <h1>Teoria big five</h1>
       {/* Explicação geral sobre os cinco traços de personalidade */}
-      <h3>A teoria dos Cinco Grandes Fatores de Personalidade (Big Five) descreve a personalidade humana em cinco dimensões principais. Cada pessoa possui uma combinação única desses traços, que ajudam a explicar padrões de pensamento, emoção e comportamento:</h3>
+      <p className='explicacao-geral'>A teoria dos Cinco Grandes Fatores de Personalidade (Big Five) descreve a personalidade humana em cinco dimensões principais. Cada pessoa possui uma combinação única desses traços, que ajudam a explicar padrões de pensamento, emoção e comportamento:</p>
       {/* Mostramos as explicações de cada traço */}
-      <p>Neuroticismo: {explicacoes.neuroticismo}</p>
-      <p>Conscienciosidade: {explicacoes.conscienciosidade}</p>
-      <p>Extroversão: {explicacoes.extroversao}</p>
-      <p>Agradabilidade: {explicacoes.agradabilidade}</p>
-      <p>Abertura: {explicacoes.abertura}</p>
+      {Object.entries(explicacoes).map(([nome, descricao]) => (
+        <div key={nome} style={{ marginBottom: '10px' }}>
+          <div className='toggle'
+            onClick={() => toggleTraco(nome)}
+            style={{
+              cursor: 'pointer',
+              fontWeight: 'bold',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '8px'
+            }}
+          >
+            {tracoAberto === nome ? (
+              <i className="bi bi-chevron-down"></i>
+            ) : (
+              <i className="bi bi-chevron-right"></i>
+            )}
+            {nome.charAt(0).toUpperCase() + nome.slice(1)}
+          </div>
+          {tracoAberto === nome && (
+            <div className='descricao' style={{ marginTop: '5px', paddingLeft: '24px' }}>
+              {descricao}
+            </div>
+          )}
+        </div>
+      ))}
 
-      {/* Botão para refazer o teste */}
-      <button onClick={refazerTeste}>Refazer Teste</button>
-      <button onClick={() => navigate('/resultado')}>Voltar para o resultado</button>
+      <div className='botoes-sobre-refazer tracosResumidos'>
+        {/* Botão para refazer o teste */}
+        <button className='buttons' onClick={refazerTeste}>REFAZER TESTE</button>
+        <button className='buttons' onClick={() => navigate('/resultado')}>VOLTAR PARA O RESULTADO</button>
+      </div>
     </div>
   );
 }

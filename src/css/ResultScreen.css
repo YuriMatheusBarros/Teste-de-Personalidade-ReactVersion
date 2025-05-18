@@ -1,0 +1,78 @@
+.result-screen{
+    height: 100vh;
+    display: flex;
+    position: fixed;
+    margin: 1.5em;
+}
+
+.resultCenter{
+    flex-direction: column;
+    align-items: center;
+}
+
+.result-screen ul{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3em;
+}
+
+.result-screen ul li{
+    list-style: none;
+    text-align: justify;
+    width: 80%;
+}
+
+.result-screen strong{
+    color: #333333;
+}
+
+.titulo-result{
+    color: #7B2CBF;
+    margin: 0.5em 0 1.2em 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.result-traco{
+    color: #6d5ab8;
+}
+
+.caixa-result{
+    background-color: #7a2cbf0c;
+    border: 0.18em solid #7B2CBF;
+    padding: 0 3em 1.5em 3em;
+    border-radius: 1em;
+    margin-bottom: 2em;
+}
+
+.caixa-result p{
+    font-weight: 500;
+    color: #333333;
+}
+
+.titulo-traco-dominante{
+    color: #7B2CBF;
+    margin-bottom: 1em;
+}
+
+.botoes-sobre-refazer{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.buttons{
+    width: 17em;
+    height: 2.5em;
+    border-radius: 10px;
+    border: none;
+    background-color: #7B2CBF;
+    color: white;
+    cursor: pointer;
+    font-weight: 760;
+    border: 2px solid transparent;
+    transition: background-color 0.3s, transform 0.2s, opacity 0.2s;
+}
+
+.buttons:hover{
+    opacity: 0.9;
+}
