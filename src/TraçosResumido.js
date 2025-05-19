@@ -37,6 +37,11 @@ function TraçosResumido() {
       <h1>Teoria big five</h1>
       {/* Explicação geral sobre os cinco traços de personalidade */}
       <p className='explicacao-geral'>A teoria dos Cinco Grandes Fatores de Personalidade (Big Five) descreve a personalidade humana em cinco dimensões principais. Cada pessoa possui uma combinação única desses traços, que ajudam a explicar padrões de pensamento, emoção e comportamento:</p>
+
+      <video width="25%" height="auto" controls style={{ display: "block", margin: "0 auto" }}>
+        <source src={process.env.PUBLIC_URL + "/bigfive.mp4"} type="video/mp4" />
+      </video>
+
       {/* Mostramos as explicações de cada traço */}
       {Object.entries(explicacoes).map(([nome, descricao]) => (
         <div key={nome} style={{ marginBottom: '10px' }}>
