@@ -59,7 +59,7 @@ function ResultScreen() {
         {maioresPontuacoes.length > 1 ? 'Traços de personalidade em destaque:' : 'Traço de personalidade dominante:'}
       </h3>
       <ul>
-        {maioresPontuacoes.map((fator) => (
+        {maioresPontuacoes.map((fator, index) => (
           <li key={fator}>
             <strong>{fator.charAt(0).toUpperCase() + fator.slice(1)}:</strong> {explicacoes[fator]}
           </li>

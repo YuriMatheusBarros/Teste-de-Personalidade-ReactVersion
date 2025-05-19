@@ -13,4 +13,5 @@ body {
   /* Fazemos as letras ficarem mais suaves e bonitas em telas de computador */
   -webkit-font-smoothing: antialiased; /* Para navegadores como o Chrome */
   -moz-osx-font-smoothing: grayscale; /* Para navegadores no Mac */
+
 }
