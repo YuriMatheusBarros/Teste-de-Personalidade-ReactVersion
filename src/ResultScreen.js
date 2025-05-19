@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import './css/ResultScreen.css'
 
 function ResultScreen() {
   const navigate = useNavigate();
@@ -42,17 +43,19 @@ function ResultScreen() {
   };
 
   return (
-    <div className="result-screen">
-      {/* Mostramos os resultados do teste */}
-      <h2>Resultado do Teste</h2>
-      <p>Neuroticismo: {resultado.neuroticismo.toFixed(2)}%</p>
-      <p>Conscienciosidade: {resultado.conscienciosidade.toFixed(2)}%</p>
-      <p>Extroversão: {resultado.extroversao.toFixed(2)}%</p>
-      <p>Agradabilidade: {resultado.agradabilidade.toFixed(2)}%</p>
-      <p>Abertura: {resultado.abertura.toFixed(2)}%</p>
+    <div className="result-screen resultCenter">
+      <div className='caixa-result'>
+        {/* Mostramos os resultados do teste */}
+        <h2 className='titulo-result'>Resultado do Teste</h2>
+        <p><span className='result-traco'>Neuroticismo:</span> {resultado.neuroticismo.toFixed(2)}%</p>
+        <p><span className='result-traco'>Conscienciosidade:</span> {resultado.conscienciosidade.toFixed(2)}%</p>
+        <p><span className='result-traco'>Extroversão:</span> {resultado.extroversao.toFixed(2)}%</p>
+        <p><span className='result-traco'>Agradabilidade:</span> {resultado.agradabilidade.toFixed(2)}%</p>
+        <p><span className='result-traco'>Abertura:</span> {resultado.abertura.toFixed(2)}%</p>
+      </div>
 
       {/* Mostramos os traços mais fortes da pessoa */}
-      <h3 style={{ marginTop: '1.5em' }}>
+      <h3 className='titulo-traco-dominante' style={{ marginTop: '1.5em' }}>
         {maioresPontuacoes.length > 1 ? 'Traços de personalidade em destaque:' : 'Traço de personalidade dominante:'}
       </h3>
       <ul>
@@ -63,9 +66,11 @@ function ResultScreen() {
         ))}
       </ul>
 
-      {/* Botões para refazer o teste ou aprender mais sobre a teoria */}
-      <button onClick={refazerTeste}>Refazer Teste</button>
-      <button onClick={() => navigate('/traços')}>Saber mais sobre a teoria</button>
+      <div className='botoes-sobre-refazer'>
+        {/* Botões para refazer o teste ou aprender mais sobre a teoria */}
+        <button className='buttons' onClick={refazerTeste}>REFAZER TESTE</button>
+        <button className='buttons' onClick={() => navigate('/traços')}>SABER MAIS SOBRE A TEORIA</button>
+      </div>
     </div>
   );
 }

@@ -7,9 +7,9 @@ import './css/QuestionScreen.css'
 // Cada pergunta tem um texto, um peso (o quanto ela vale) e qual tipo de personalidade ela mede.
 const perguntas = [
   //  Neuroticismo
-  { texto: "É comum que pequenos problemas fiquem na minha cabeça por bastante tempo.", peso: 2, tipo: "neuroticismo" }, // ansiedade moderada
-  { texto: "Certas situações do dia a dia conseguem me deixar impaciente com facilidade.", peso: 2, tipo: "neuroticismo" }, // reatividade emocional
-  { texto: "Geralmente me sinto confortável ao lidar com situações novas ou desafiadoras.", peso: 2, tipo: "neuroticismo", inverso: true }, // baixa segurança interna
+  { texto: "É comum que pequenos problemas fiquem na minha cabeça por bastante tempo", peso: 2, tipo: "neuroticismo" }, // ansiedade moderada
+  { texto: "Certas situações do dia a dia conseguem me deixar impaciente com facilidade", peso: 2, tipo: "neuroticismo" }, // reatividade emocional
+  { texto: "Geralmente me sinto confortável ao lidar com situações novas ou desafiadoras", peso: 2, tipo: "neuroticismo", inverso: true }, // baixa segurança interna
   { texto: "Sou resistente ao estresse", peso: 1, tipo: "neuroticismo", inverso: true }, // característica positiva oposta
   { texto: "Costumo me sentir desanimado(a)", peso: 3, tipo: "neuroticismo" }, // depressividade intensa
   { texto: "Tenho mudanças de humor repentinas", peso: 3, tipo: "neuroticismo" }, // instabilidade emocional alta
@@ -36,14 +36,14 @@ const perguntas = [
   { texto: "Tenho dificuldade em deixar para trás mágoas do passado", peso: 3, tipo: "agradabilidade", inverso: true }, // ressentimento elevado
   { texto: "Gosto de ajudar nas tarefas de casa", peso: 1, tipo: "agradabilidade" }, // cooperação básica
   { texto: "Mantenho minhas promessas", peso: 3, tipo: "agradabilidade" }, // confiabilidade elevada
-  { texto: "Normalmente sou receptivo com desconhecidos.", peso: 2, tipo: "agradabilidade" }, // afabilidade social
+  { texto: "Normalmente sou receptivo com desconhecidos", peso: 2, tipo: "agradabilidade" }, // afabilidade social
   { texto: "Costumo ceder para evitar conflitos", peso: 2, tipo: "agradabilidade" }, // tendência conciliadora
   { texto: "Tendo a desconfiar das pessoas", peso: 2, tipo: "agradabilidade", inverso: true }, // baixa confiança
 
   //  Abertura
-  { texto: "Costumo imaginar cenários detalhados quando penso em algo.", peso: 2, tipo: "abertura" }, // imaginação criativa
-  { texto: "Geralmente encontro significado em músicas, pinturas ou outras expressões artísticas.", peso: 2, tipo: "abertura" }, // valorização estética
-  { texto: "Frequentemente encontro maneiras diferentes de resolver problemas ou expressar ideias.", peso: 3, tipo: "abertura" }, // criatividade pessoal
+  { texto: "Costumo imaginar cenários detalhados quando penso em algo", peso: 2, tipo: "abertura" }, // imaginação criativa
+  { texto: "Geralmente encontro significado em músicas, pinturas ou outras expressões artísticas", peso: 2, tipo: "abertura" }, // valorização estética
+  { texto: "Frequentemente encontro maneiras diferentes de resolver problemas ou expressar ideias", peso: 3, tipo: "abertura" }, // criatividade pessoal
   { texto: "Prefiro ideias práticas a conceitos abstratos", peso: 2, tipo: "abertura", inverso: true }, // pragmatismo reduzido
   { texto: "Às vezes sou tocado por detalhes ou cenas que a maioria das pessoas nem nota.", peso: 3, tipo: "abertura" }, // sensibilidade estética elevada
   { texto: "Evito temas filosóficos ou existenciais", peso: 2, tipo: "abertura", inverso: true } // restrição à reflexão abstrata
