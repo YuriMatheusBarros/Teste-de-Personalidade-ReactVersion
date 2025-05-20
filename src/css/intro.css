@@ -7,15 +7,27 @@ body {
 .intro {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin: 1.5em;
-
+  height: 100vh;
 }
 
+.img-titulo {
+  display: flex;
+  height: 6em;
+  justify-content: center;
+}
+
+.img-titulo img {
+  height: 6em;
+}
+
+.divButton-iniciar{
+  display: flex;
+  justify-content: center;
+}
 .button-iniciarTeste {
   justify-content: center;
-  margin-top: 4em;
-  width: 10em;
+  margin-top: 0em;
+  width: 12em;
   height: 2.3em;
   border-radius: 10px;
   border: none;
@@ -40,15 +52,17 @@ body {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
+.imagens-demonstrativas {
+  height: 1.5em;
+  
+}
+
 .explicacao {
-  display: flex;
-  justify-content: center;
+  margin: 0.5em 0.5em 0.5em 0.6em;
   color: #333333;
-  line-height: 1.7;
 }
 
 .explicacao em {
-  margin: 0 0.3em 0 0.3em;
   font-weight: 600;
 }
 
@@ -56,39 +70,42 @@ body {
   margin-right: 0.4em;
 }
 
+.conjunto-img-texto{
+  display: flex;
+  align-items: center;
+  margin-left: 4em;
+}
+
+.opcoes{
+  margin: 0.5em 0 0.5em 9em;
+}
+
 .explicacao-tracos {
   color: #6d5ab8;
   text-align: center;
-  margin-bottom: 1.5em;
+  margin: 1em 0 1.5em 1.5em;
 }
 
-.text-boaSorte {
+.txt{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.txt-aposResponder{
+  text-align: justify;
+  width: 90%;
+}
+
+.text-cliqueParaComecar {
   color: #7B2CBF;
   margin-left: 0.3em;
 }
 
-@keyframes destaqueDeslizante {
-  0% {
-    transform: translateY(-10px);
-    opacity: 0;
-    background-color: #D0E7FF;
-  }
-
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-    background-color: #EAF4FF;
-  }
-}
-
 .destaque-suave {
-  animation: destaqueDeslizante 1s ease-out;
-  background-color: #EAF4FF;
-  border-left: 5px solid #7B2CBF;
   padding: 0.8em;
-  margin: 1em 0;
+  margin: 0.5em 0;
   border-radius: 8px;
   color: #333;
   font-weight: 500;
-  margin-top: 4em;
 }

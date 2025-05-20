@@ -45,7 +45,7 @@ const perguntas = [
   { texto: "Geralmente encontro significado em músicas, pinturas ou outras expressões artísticas", peso: 2, tipo: "abertura" }, // valorização estética
   { texto: "Frequentemente encontro maneiras diferentes de resolver problemas ou expressar ideias", peso: 3, tipo: "abertura" }, // criatividade pessoal
   { texto: "Prefiro ideias práticas a conceitos abstratos", peso: 2, tipo: "abertura", inverso: true }, // pragmatismo reduzido
-  { texto: "Às vezes sou tocado por detalhes ou cenas que a maioria das pessoas nem nota.", peso: 3, tipo: "abertura" }, // sensibilidade estética elevada
+  { texto: "Às vezes sou tocado por detalhes ou cenas que a maioria das pessoas nem notam", peso: 3, tipo: "abertura" }, // sensibilidade estética elevada
   { texto: "Evito temas filosóficos ou existenciais", peso: 2, tipo: "abertura", inverso: true } // restrição à reflexão abstrata
 ];
 
@@ -150,6 +150,7 @@ function QuestionScreen() {
         <button className='button-opcao' onClick={() => handleAnswer(7.5)}>CONCORDO PARCIALMENTE</button>
         <button className='button-opcao' onClick={() => handleAnswer(10)}>CONCORDO COMPLETAMENTE</button>
       </div>
+      <p className='explicacao destaque-suave'> <i class="bi bi-info-circle"></i> É recomendável evitar a opção neutro para maior exatidão do resultado.</p>
     </div>
   );
 }
