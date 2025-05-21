@@ -1,13 +1,16 @@
 {
   "files": {
-    "main.css": "/Teste-de-Personalidade-ReactVersion/static/css/main.500a7bbf.css",
-    "main.js": "/Teste-de-Personalidade-ReactVersion/static/js/main.f57c2899.js",
+    "main.css": "/Teste-de-Personalidade-ReactVersion/static/css/main.569f919f.css",
+    "main.js": "/Teste-de-Personalidade-ReactVersion/static/js/main.0e37f711.js",
+    "static/media/cerebro.png": "/Teste-de-Personalidade-ReactVersion/static/media/cerebro.d067b31bf45ad0354337.png",
+    "static/media/objetivo.png": "/Teste-de-Personalidade-ReactVersion/static/media/objetivo.3201dfb769727e7e3ac6.png",
+    "static/media/info.png": "/Teste-de-Personalidade-ReactVersion/static/media/info.0393c850f9f0abfc2c47.png",
     "index.html": "/Teste-de-Personalidade-ReactVersion/index.html",
-    "main.500a7bbf.css.map": "/Teste-de-Personalidade-ReactVersion/static/css/main.500a7bbf.css.map",
-    "main.f57c2899.js.map": "/Teste-de-Personalidade-ReactVersion/static/js/main.f57c2899.js.map"
+    "main.569f919f.css.map": "/Teste-de-Personalidade-ReactVersion/static/css/main.569f919f.css.map",
+    "main.0e37f711.js.map": "/Teste-de-Personalidade-ReactVersion/static/js/main.0e37f711.js.map"
   },
   "entrypoints": [
-    "static/css/main.500a7bbf.css",
-    "static/js/main.f57c2899.js"
+    "static/css/main.569f919f.css",
+    "static/js/main.0e37f711.js"
   ]
 }
