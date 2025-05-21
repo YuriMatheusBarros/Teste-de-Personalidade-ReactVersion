@@ -8,6 +8,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  align-items: center;
 }
 
 .img-titulo {
@@ -18,15 +19,108 @@ body {
 
 .img-titulo img {
   height: 6em;
+  margin: 0.5em 0em 1.5em 0em;
 }
 
-.divButton-iniciar{
+.boasVindas {
+  display: flex;
+  justify-content: center;
+  color: #7B2CBF;
+  margin: 1em 0em 1.5em 0em;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.explicacao-tracos {
+  color: #6d5ab8;
+  text-align: center;
+  margin: 1em 0 1.5em 1.5em;
+  font-weight: 600;
+}
+
+.imagens-demonstrativas {
+  height: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.explicacao {
+  margin: 0.5em 0.5em 0.5em 0.6em;
+  color: #333333;
+  font: 500;
+}
+
+.aviso {
+  margin-bottom: 1em;
+  font-weight: 600;
+}
+
+.negrito {
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+
+.conjunto-img-texto em {
+  font-weight: 600;
+  color: #7B2CBF;
+}
+
+.explicacao i {
+  margin-right: 0.4em;
+}
+
+.explicacao p {
+  font-weight: 600;
+}
+
+.conjunto-img-texto {
+  display: flex;
+  align-items: center;
+}
+
+.opcoes {
+  color: #333333;
+  font-weight: 600;
+  margin-top: 0.5em;
+}
+
+.txt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1em;
+}
+
+.txt-aposResponder {
+  text-align: justify;
+  margin-top: 2em;
+  font-weight: 600;
+}
+
+.text-cliqueParaComecar {
+  color: #7B2CBF;
+  font-weight: 400;
+}
+
+.info-extra {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  margin: 1.8em 0 1.6em 0;
+  color: #333333;
+  font-weight: 600;
+  color: #222;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  background-color: #fafafa;
+}
+
+.divButton-iniciar {
   display: flex;
   justify-content: center;
 }
+
 .button-iniciarTeste {
   justify-content: center;
-  margin-top: 0em;
   width: 12em;
   height: 2.3em;
   border-radius: 10px;
@@ -42,70 +136,4 @@ body {
 .button-iniciarTeste:hover {
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
   background-color: #6931ad;
-}
-
-.boasVindas {
-  display: flex;
-  justify-content: center;
-  color: #7B2CBF;
-  margin: 1em 0em 1.5em 0em;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
-}
-
-.imagens-demonstrativas {
-  height: 1.5em;
-  
-}
-
-.explicacao {
-  margin: 0.5em 0.5em 0.5em 0.6em;
-  color: #333333;
-}
-
-.explicacao em {
-  font-weight: 600;
-}
-
-.explicacao i {
-  margin-right: 0.4em;
-}
-
-.conjunto-img-texto{
-  display: flex;
-  align-items: center;
-  margin-left: 4em;
-}
-
-.opcoes{
-  margin: 0.5em 0 0.5em 9em;
-}
-
-.explicacao-tracos {
-  color: #6d5ab8;
-  text-align: center;
-  margin: 1em 0 1.5em 1.5em;
-}
-
-.txt{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.txt-aposResponder{
-  text-align: justify;
-  width: 90%;
-}
-
-.text-cliqueParaComecar {
-  color: #7B2CBF;
-  margin-left: 0.3em;
-}
-
-.destaque-suave {
-  padding: 0.8em;
-  margin: 0.5em 0;
-  border-radius: 8px;
-  color: #333;
-  font-weight: 500;
 }
