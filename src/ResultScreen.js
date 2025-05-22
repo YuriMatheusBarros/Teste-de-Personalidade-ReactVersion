@@ -62,26 +62,21 @@ function ResultScreen() {
 
 
   // Esta função encontra os traços com as maiores pontuações
-  const encontrarMaiores = () => {
-    const valores = Object.values(resultado); // Pegamos os números de cada traço
-    const maior = Math.max(...valores); // Descobrimos qual é o maior número
-    return Object.keys(resultado).filter(
-      (fator) => resultado[fator] === maior // Pegamos os traços que têm o maior número
-    );
-  };
+  // Verifica se todos os traços estão próximos de 50%
+  const todosProximosDe50 = Object.values(resultado).every(valor =>
+    Math.abs(valor - 50) < 2 // tolerância de ±3%
+  );
 
-  // Guardamos os traços com as maiores pontuações
-  const maioresPontuacoes = encontrarMaiores();
+  // Traços mais altos, ordenados (usado apenas se houver perfil dominante)
+  const maioresDoisTracos = Object.entries(resultado)
+    .sort(([, a], [, b]) => b - a)
+    .slice(0, 2);
 
   // Esta função limpa os resultados e volta para o início do teste
   const refazerTeste = () => {
     sessionStorage.clear(); // Apagamos os resultados guardados
     navigate('/'); // Voltamos para a página inicial
   };
-
-  const maioresDoisTracos = Object.entries(resultado)
-  .sort(([, a], [, b]) => b - a) // do maior para o menor
-  .slice(0, 2); // apenas os dois maiores
 
   return (
     <div className="result-screen resultCenter">
@@ -96,16 +91,25 @@ function ResultScreen() {
       </div>
 
       {/* Mostramos os traços mais fortes da pessoa */}
-      <h3 className='titulo-traco-dominante' style={{ marginTop: '1.5em' }}>
-        Traços de personalidade mais predominantes:
-      </h3>
-      <ul>
-        {maioresDoisTracos.map(([traco, valor]) => (
-          <li key={traco}>
-            <strong>{traco.charAt(0).toUpperCase() + traco.slice(1)} ({valor.toFixed(2)}%):</strong> {explicacoes[traco]}
-          </li>
-        ))}
-      </ul>
+      {todosProximosDe50 ? (
+        <div className='mensagem-refazer' style={{ marginTop: '2em', textAlign: 'center' }}>
+          <h3 className=''><strong>Não foi possível identificar um perfil dominante.</strong></h3>
+          <ul>Tente refazer o teste respondendo com mais clareza ou sinceridade.</ul>
+        </div>
+      ) : (
+        <>
+          <h3 className='titulo-traco-dominante' style={{ marginTop: '1.5em' }}>
+            Traços de personalidade mais predominantes:
+          </h3>
+          <ul>
+            {maioresDoisTracos.map(([traco, valor]) => (
+              <li key={traco}>
+                <strong>{traco.charAt(0).toUpperCase() + traco.slice(1)} ({valor.toFixed(2)}%):</strong> {explicacoes[traco]}
+              </li>
+            ))}
+          </ul>
+        </>
+      )}
 
       <div className='botoes-sobre-refazer'>
         {/* Botões para refazer o teste ou aprender mais sobre a teoria */}
