@@ -21,17 +21,16 @@ function Intro() {
   return (
     <div className="intro">
       {/* Textos explicando o que é o teste */}
-      <div className='img-titulo'>
-        <h1 className='boasVindas'>Bem-vindo ao Teste de Personalidade dos Cinco Fatores!</h1>
-      </div>
-      <p className='explicacao-tracos'>Este teste é baseado no modelo dos cinco grandes traços de personalidade: <strong>Neuroticismo</strong>, <strong>Conscienciosidade</strong>, <strong>Extroversão</strong>, <strong>Agradabilidade</strong> e <strong>Abertura</strong>.</p>
 
-        <p className='explicacao negrito'> O objetivo é avaliar como você reage em diferentes situações com base nos Cinco Fatores.</p>
-      
-        <p className='explicacao aviso'>Este é um teste de demonstração e não substitui uma avaliação psicológica profissional</p>
-    
-        <p className='explicacao'><em>&#10033; As opções de resposta variam entre:</em></p>
-      
+      <h1 className='boasVindas'>Bem-vindo ao Teste de Personalidade dos Cinco Fatores!</h1>
+
+      <p className='explicacao-tracos'>Este teste é baseado no modelo dos cinco grandes traços de personalidade: <strong>Neuroticismo</strong>, <strong>Conscienciosidade</strong>, <strong>Extroversão</strong>, <strong>Agradabilidade</strong> e <strong>Abertura</strong>.</p>
+      <p className='explicacao negrito'> O objetivo é avaliar como você reage em diferentes situações com base nos Cinco Fatores.</p>
+
+      <p className='explicacao aviso'>Este é um teste de demonstração e não substitui uma avaliação psicológica profissional</p>
+
+      <p className='explicacao opcoes'>As opções de resposta variam entre:</p>
+
       <ul type='circle' className='opcoes'>
         <li>Discordo Completamente</li>
         <li>Discordo parcialmente</li>
@@ -40,20 +39,17 @@ function Intro() {
         <li>Concordo Completamente</li>
       </ul>
 
-        <p className='explicacao txt-aposResponder'>Após responder todas as perguntas, você receberá um resultado detalhado sobre os seus traços de personalidade com maior destaque.</p>
-        <p className='text-cliqueParaComecar'>Pronto? Clique abaixo para começar!</p>
-
+      <p className='explicacao txt-aposResponder'>Após responder todas as perguntas, você receberá um resultado detalhado sobre os seus traços de personalidade com maior destaque.</p>
+      <p className='text-cliqueParaComecar'>Pronto? Clique abaixo para começar!</p>
       <div className="info-extra">
         <p>&#x1F552; <strong>Duração estimada:</strong> 4 minutos</p>
         <p>&#x1F9E9; <strong>Total de perguntas:</strong> 30</p>
         <p>&#x1F512; <strong>Seus dados não são salvos</strong></p>
       </div>
-
       <div className='divButton-iniciar'>
         {/* Botão que inicia o teste e chama a função iniciarTeste */}
         <button className='button-iniciarTeste' onClick={iniciarTeste}>COMEÇAR TESTE</button>
       </div>
-
     </div>
   );
 }

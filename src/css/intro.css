@@ -7,21 +7,11 @@ body {
 .intro {
   display: flex;
   flex-direction: column;
-  height: 100vh;
   align-items: center;
   justify-content: center;
-  font-size: 1.1em;
-}
-
-.img-titulo {
-  display: flex;
-  height: 6em;
-  justify-content: center;
-}
-
-.img-titulo img {
-  height: 6em;
-  margin: 0.5em 0em 1.5em 0em;
+  font-size: 1.2em;  
+  height: 100vh;
+  background: linear-gradient(135deg, #E6E0F8 0%, #CFC6F9 100%);
 }
 
 .boasVindas {
@@ -35,7 +25,7 @@ body {
 .explicacao-tracos {
   color: #6d5ab8;
   text-align: center;
-  margin: 1em 0 1.5em 1.5em;
+  margin: 1em 1.5em 1.5em 1.5em;
   font-weight: 600;
 }
 
@@ -71,8 +61,6 @@ body {
   margin-top: 0.5em;
 }
 
-
-
 .txt-aposResponder {
   text-align: justify;
   margin-top: 2em;
@@ -94,10 +82,11 @@ body {
   color: #333333;
   font-weight: 600;
   color: #222;
-  padding: 10px;
+  padding: 13px;
   border: 1px solid #e0e0e0;
   border-radius: 10px;
-  background-color: #fafafa;
+  background-color: #CFC6F9;
+  
 }
 
 .divButton-iniciar {
