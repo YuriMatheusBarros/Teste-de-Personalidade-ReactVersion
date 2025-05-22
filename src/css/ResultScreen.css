@@ -99,12 +99,3 @@
 .buttons:hover{
     opacity: 0.9;
 }
-
-.mensagem-refazer{
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    max-width: 100%;
-    align-items: center;
-}
