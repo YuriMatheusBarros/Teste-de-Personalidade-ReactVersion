@@ -79,6 +79,10 @@ function ResultScreen() {
     navigate('/'); // Voltamos para a página inicial
   };
 
+  const maioresDoisTracos = Object.entries(resultado)
+  .sort(([, a], [, b]) => b - a) // do maior para o menor
+  .slice(0, 2); // apenas os dois maiores
+
   return (
     <div className="result-screen resultCenter">
       <div className='caixa-result'>
@@ -93,12 +97,12 @@ function ResultScreen() {
 
       {/* Mostramos os traços mais fortes da pessoa */}
       <h3 className='titulo-traco-dominante' style={{ marginTop: '1.5em' }}>
-        {maioresPontuacoes.length > 1 ? 'Traços de personalidade em destaque:' : 'Traço de personalidade dominante:'}
+        Traços de personalidade mais predominantes:
       </h3>
       <ul>
-        {maioresPontuacoes.map((fator, index) => (
-          <li key={fator}>
-            <strong>{fator.charAt(0).toUpperCase() + fator.slice(1)}:</strong> {explicacoes[fator]}
+        {maioresDoisTracos.map(([traco, valor]) => (
+          <li key={traco}>
+            <strong>{traco.charAt(0).toUpperCase() + traco.slice(1)} ({valor.toFixed(2)}%):</strong> {explicacoes[traco]}
           </li>
         ))}
       </ul>
