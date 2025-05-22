@@ -9,6 +9,8 @@ body {
   flex-direction: column;
   height: 100vh;
   align-items: center;
+  justify-content: center;
+  font-size: 1.1em;
 }
 
 .img-titulo {
@@ -37,10 +39,6 @@ body {
   font-weight: 600;
 }
 
-.imagens-demonstrativas {
-  height: 1.5em;
-  margin-bottom: 0.5em;
-}
 
 .explicacao {
   margin: 0.5em 0.5em 0.5em 0.6em;
@@ -58,10 +56,6 @@ body {
   margin-bottom: 0.5em;
 }
 
-.conjunto-img-texto em {
-  font-weight: 600;
-  color: #7B2CBF;
-}
 
 .explicacao i {
   margin-right: 0.4em;
@@ -71,33 +65,25 @@ body {
   font-weight: 600;
 }
 
-.conjunto-img-texto {
-  display: flex;
-  align-items: center;
-}
-
 .opcoes {
   color: #333333;
   font-weight: 600;
   margin-top: 0.5em;
 }
 
-.txt {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  line-height: 1em;
-}
+
 
 .txt-aposResponder {
   text-align: justify;
   margin-top: 2em;
   font-weight: 600;
+  text-align: center;
 }
 
 .text-cliqueParaComecar {
-  color: #7B2CBF;
-  font-weight: 400;
+  color: #333333;
+  font-weight: 600;
+  text-align: center;
 }
 
 .info-extra {
