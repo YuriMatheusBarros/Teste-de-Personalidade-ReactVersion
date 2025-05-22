@@ -86,7 +86,15 @@ body {
   border: 1px solid #e0e0e0;
   border-radius: 10px;
   background-color: #CFC6F9;
-  
+  align-items: center;
+}
+.info-extra p{
+  display: flex;
+  align-items: center;
+}
+
+.quantQuestIcon{
+  height: 1.7em;
 }
 
 .divButton-iniciar {
@@ -112,3 +120,4 @@ body {
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
   background-color: #6931ad;
 }
+

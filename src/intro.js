@@ -6,6 +6,9 @@ import './css/intro.css'
 // Importamos o useNavigate, que ajuda a mudar de página no site
 import { useNavigate } from 'react-router-dom';
 
+import cadeadoIcon from './image/cadeadoIcon.png';
+import quantQuestIcon from './image/quantQuestIcon.ico';
+
 // Criamos uma função chamada Intro, que é uma parte do site (uma página)
 function Intro() {
   // Aqui usamos o useNavigate para poder mudar de página
@@ -43,8 +46,8 @@ function Intro() {
       <p className='text-cliqueParaComecar'>Pronto? Clique abaixo para começar!</p>
       <div className="info-extra">
         <p>&#x1F552; <strong>Duração estimada:</strong> 4 minutos</p>
-        <p>&#x1F9E9; <strong>Total de perguntas:</strong> 30</p>
-        <p>&#x1F512; <strong>Seus dados não são salvos</strong></p>
+        <p><img src={cadeadoIcon} /> <strong>Total de perguntas:</strong> 30</p>
+        <p><img className='quantQuestIcon' src={quantQuestIcon}/> <strong>Seus dados não são salvos</strong></p>
       </div>
       <div className='divButton-iniciar'>
         {/* Botão que inicia o teste e chama a função iniciarTeste */}
