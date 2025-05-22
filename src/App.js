@@ -25,10 +25,14 @@ function App() {
         <Route path="/resultado" element={<ResultScreen />} />
         {/* Rota para a página de traços resumidos ("/traços"), que exibe o componente TraçosResumido */}
         <Route path="/traços" element={<TraçosResumido />} />
+
       </Routes>
     </Router>
   );
 }
+
+
+
 
 // Exporta o componente App para ser usado em outras partes do projeto
 export default App;
