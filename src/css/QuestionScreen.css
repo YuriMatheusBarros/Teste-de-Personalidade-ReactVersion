@@ -8,6 +8,8 @@ body{
     height: 100vh;
     align-items: center;
     justify-content: center;
+    font-size: 1.2em; 
+    background: linear-gradient(135deg, #E6E0F8 0%, #CFC6F9 100%);
 }
 
 .pergunta-numero{
@@ -20,7 +22,7 @@ body{
 
 .caixa-pergunta{
     display: flex;
-    background-color: #EAF4FF;
+    background-color: #6d5ab825;
     height: 7em;
     width: 60%;
     border: 3px solid #7B2CBF;
@@ -37,6 +39,7 @@ body{
     font-size: 1.5em;
     font-weight: 600;
     letter-spacing: 0.05em;
+    color: #333333;
 }
 
 .buttons-opcoes{
@@ -61,4 +64,11 @@ body{
 
 .button-opcao:hover{
     opacity: 0.9;
+}
+
+.recomendacao{
+    color: #333333;
+    font-weight: 600;
+    margin-top: 3em;
+    font-size: 1.2em;
 }

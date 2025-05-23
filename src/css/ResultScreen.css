@@ -4,6 +4,8 @@
     display: flex;
     padding-top: 1em;
     overflow: hidden;
+    font-size: 1.2em;
+    background: linear-gradient(135deg, #E6E0F8 0%, #CFC6F9 100%);
 }
 
 .resultCenter{
@@ -63,6 +65,7 @@
     border: 0.18em solid #7B2CBF;
     padding: 0 3em 1.5em 3em;
     border-radius: 1em;
+    margin-top: 2em;
 }
 
 .caixa-result p{
@@ -72,7 +75,7 @@
 
 .titulo-traco-dominante{
     color: #7B2CBF;
-    margin-bottom: 1em;
+    margin-bottom: 0.3em;
 }
 
 .botoes-sobre-refazer{
