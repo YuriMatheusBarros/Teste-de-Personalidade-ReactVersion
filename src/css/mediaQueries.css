@@ -1,0 +1,231 @@
+/* Celulares */
+@media (max-width: 480px) {
+
+    .boasVindas {
+        font-size: 1.25em;
+        text-align: center;
+    }
+
+    .info-extra {
+        display: block;
+    }
+
+    .pergunta-numero {
+        font-size: 2em;
+    }
+
+    .caixa-pergunta {
+        width: 90%;
+        padding: 1.5em;
+    }
+
+    .perguntas {
+        font-size: 1em;
+        text-align: center;
+        letter-spacing: 0;
+    }
+
+    .buttons-opcoes {
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.5em;
+    }
+
+    .button-opcao {
+        margin: 0.1em;
+    }
+
+    .recomendacao {
+        margin: 1.8em;
+        font-size: 0.8em;
+        text-align: center;
+    }
+
+    .caixa-result {
+        width: 92%;
+        font-size: 0.8em;
+        text-align: center;
+    }
+
+    .titulo-result {
+        font-size: 1.5em;
+        text-align: center;
+        margin: 0.3em 0 0.7em 0;
+    }
+
+    .titulo-traco-dominante {
+        font-size: 0.9em;
+        text-align: center;
+        width: 90%;
+        margin-bottom: 1em;
+    }
+
+    .result-screen ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    .result-screen ul li {
+        font-size: 1em;
+        width: 90%;
+        font-size: 0.7em;
+    }
+
+    .botoes-sobre-refazer {
+        margin-top: 1em;
+        flex-direction: column;
+    }
+
+    .explicacao-geral{
+        font-size: 0.9em;
+    }
+
+    .resultTotal{
+        height: 100%;
+    }
+
+    .tracosResumidos{
+        align-items: center;
+    }
+}
+
+
+
+/* Tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+    .boasVindas {
+        font-size: 1.6em;
+        text-align: center;
+    }
+
+    .info-extra {
+        display: block;
+    }
+
+    .pergunta-numero {
+        font-size: 2em;
+    }
+
+    .caixa-pergunta {
+        width: 70%;
+        padding: 1.5em;
+    }
+
+    .perguntas {
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .buttons-opcoes {
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.5em;
+    }
+
+    .button-opcao {
+        margin: 0.1em;
+    }
+
+    .recomendacao {
+        margin: 1.8em;
+        font-size: 0.8em;
+        text-align: center;
+        width: 70%;
+    }
+
+    .resultTotal{
+        font-size: clamp(1.1rem, 2.8vw, 1.8rem);
+        height: 100%;
+    }
+}
+
+/* Notebooks */
+@media (min-width: 769px) and (max-width: 1199px) {
+    .boasVindas {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .info-extra {
+        display: block;
+    }
+
+    .pergunta-numero {
+        font-size: 2.6em;
+    }
+
+    .caixa-pergunta {
+        width: 90%;
+        padding: 1.5em;
+    }
+
+    .perguntas {
+        font-size: 1.6em;
+        text-align: center;
+
+    }
+
+    .buttons-opcoes {
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.5em;
+    }
+
+    .button-opcao {
+        margin: 0.4em;
+    }
+
+    .recomendacao {
+        margin: 1.8em;
+        font-size: 1.3em;
+        text-align: center;
+    }
+
+    .resultTotal{
+        height: 100%;
+    }
+    .explicacao-geral{
+    font-size: 1.05em;
+}
+}
+
+/* Telas grandes / TVs */
+@media (min-width: 1200px) {
+    .intro {
+        font-size: clamp(0.8rem, 1vw, 1.3rem);
+        margin: 0;
+    }
+
+    .button-iniciarTeste {
+        font-size: clamp(0.9rem, 1vw, 1.3rem);
+        min-width: 300px;
+        min-height: 40px;
+        padding: 11px;
+    }
+
+    .pergunta-numero {
+        font-size: clamp(2rem, 4vw, 3rem);
+    }
+
+    .perguntas {
+        font-size: clamp(1.1rem, 2.8vw, 1.8rem);
+    }
+
+    .button-opcao {
+        margin: 0.1em;
+        font-size: clamp(0.9rem, 1vw, 1rem);
+        min-width: 250px;
+        min-height: 40px;
+        padding: 11px;
+    }
+
+    .recomendacao {
+        font-size: clamp(1.5rem, 1.5vw, 1.5rem);
+    }
+
+    .resultTotal{
+        height: 100%;
+    }
+
+
+}

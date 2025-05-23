@@ -91,7 +91,7 @@ function ResultScreen() {
       {/* Mostramos os traços mais fortes da pessoa */}
       {todosProximosDe50 ? (
         <div className='mensagem-refazer' style={{ marginTop: '2em', textAlign: 'center' }}>
-          <h3 className=''><strong>Não foi possível identificar um perfil dominante.</strong></h3>
+          <h3><strong>Não foi possível identificar um perfil dominante.</strong></h3>
           <ul>Tente refazer o teste respondendo com mais clareza ou sinceridade.</ul>
         </div>
       ) : (

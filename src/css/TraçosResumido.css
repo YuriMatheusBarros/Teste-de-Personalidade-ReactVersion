@@ -1,5 +1,7 @@
-.resultLeft{
+.resultTotal{
     flex-direction: column;
+    background: linear-gradient(135deg, #E6E0F8 0%, #CFC6F9 100%);
+    font-size: 1.2em;
 }
 
 .result-screen h1{
@@ -15,6 +17,7 @@
     max-width: 85%;
     margin: 0 auto 2.5em auto;
     color: #333333;
+    font-size: 1.05em;
 }
 
 .toggle{
@@ -34,12 +37,9 @@
 }
 
 .tracosResumidos{
-    position: fixed;
-    bottom: 10px;         /* distância da parte inferior da tela */
-    left: 0;
+    bottom: 10px; 
     width: 100%;
-    padding: 10px 0;      /* espaço interno vertical */
-    z-index: 1000;        /* garantir que fique acima de outros elementos */
+    padding: 10px 0;
 }
 
 .descricao{

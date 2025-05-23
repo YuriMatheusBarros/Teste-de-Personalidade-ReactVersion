@@ -69,7 +69,7 @@ function TraçosResumido() {
   };
 
   return (
-    <div className="result-screen resultLeft">
+    <div className="result-screen resultTotal">
       {/* Título da página */}
       <h1>Teoria big five</h1>
       {/* Explicação geral sobre os cinco traços de personalidade */}
