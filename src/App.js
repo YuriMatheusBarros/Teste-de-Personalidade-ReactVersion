@@ -10,6 +10,8 @@ import QuestionScreen from './QuestionScreen';
 import ResultScreen from './ResultScreen';
 import TraçosResumido from './TraçosResumido';
 
+import './css/mediaQueries.css';
+
 // Função principal do aplicativo
 function App() {
   return (

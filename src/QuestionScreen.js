@@ -150,7 +150,7 @@ function QuestionScreen() {
         <button className='button-opcao' onClick={() => handleAnswer(7.5)}>CONCORDO PARCIALMENTE</button>
         <button className='button-opcao' onClick={() => handleAnswer(10)}>CONCORDO COMPLETAMENTE</button>
       </div>
-      <p className='explicacao destaque-suave'> <i class="bi bi-info-circle"></i> É recomendável evitar a opção neutro para maior exatidão do resultado.</p>
+      <p className='recomendacao'> <i class="bi bi-info-circle"></i> É recomendável evitar a opção neutro para maior exatidão do resultado.</p>
     </div>
   );
 }
