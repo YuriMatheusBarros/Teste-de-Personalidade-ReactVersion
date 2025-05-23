@@ -60,8 +60,6 @@ function ResultScreen() {
 
   };
 
-
-  // Esta função encontra os traços com as maiores pontuações
   // Verifica se todos os traços estão próximos de 50%
   const todosProximosDe50 = Object.values(resultado).every(valor =>
     Math.abs(valor - 50) < 2 // tolerância de ±3%
